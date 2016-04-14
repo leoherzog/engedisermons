@@ -106,33 +106,33 @@
 
         function generateTitle() {
 
-          var firstSectionChoices = ["", "", "", "", "", "", "A", "A", "A", "A", "A", "A", "The", "The", "The", "The", "God and the", "The Son's", "The Beauty of the", "Understanding the", "Navigating a", "Being the", "Encountering the", "Hope in the", "Worshipping a"];
-          var secondSectionChoices = ["", "", "", "", "", "", "Faithful", "Holy", "Living", "Pacient", "Kind", "Joyful", "Gentle", "Breathing", "Faith-Filled", "Beautiful", "Fervent", "Delicate", "Graceful", "Wonderful", "Superb", "Compliant", "Devoted", "Forever", "Perfect", "Compassionate", "Forgiving", "Discerning", "Consuming", "Healing", "Cleansing", "Teaching", "Loving", "Creative", "Pure", "Supernatural", "Forsaken", "Thorough", "Splendid", "Faultless", "Matchless", "Spotless", "Supreme", "Divine", "Hallowed", "Moral", "Sacred", "Sanctified", "Virgin", "Loyal", "Sincere", "Zealous", "Just", "Reverent", "Caring", "Rich", "Valuable", "Practical", "Vigilant", "Compelling", "Vigorous", "Strong", "Superior", "Clever", "Sparing", "Merciful", "Furious", "Fierce", "Solid", "Natural"];
-          var thirdSectionChoices = ["Purpose", "Life", "Self", "Servant", "Lifestyle", "Fulfillment", "Dream", "Hope", "Wish", "Eternity", "Land", "Peace", "Mountain", "Desert", "Valley", "Well", "Oasis", "Force", "Refuge", "Guardian", "Idol", "Pain", "Source of Trust", "Shelter", "Loving Embrace", "King", "Savior", "Prince", "Hero", "Expert", "Truth", "Blessing", "Passion", "Heart", "Soul", "Mind", "Strength"];
+            var firstSectionChoices = ["", "", "", "", "", "", "A", "A", "A", "A", "A", "A", "The", "The", "The", "The", "God and the", "The Son's", "The Beauty of the", "Understanding the", "Navigating a", "Being the", "Encountering the", "Hope in the", "Worshipping a"];
+            var secondSectionChoices = ["Faithful", "Holy", "Living", "Pacient", "Kind", "Joyful", "Gentle", "Breathing", "Faith-Filled", "Beautiful", "Fervent", "Delicate", "Graceful", "Wonderful", "Superb", "Compliant", "Devoted", "Forever", "Perfect", "Compassionate", "Forgiving", "Discerning", "Consuming", "Healing", "Cleansing", "Teaching", "Loving", "Creative", "Pure", "Supernatural", "Forsaken", "Thorough", "Splendid", "Faultless", "Matchless", "Spotless", "Supreme", "Divine", "Hallowed", "Moral", "Sacred", "Sanctified", "Virgin", "Loyal", "Sincere", "Zealous", "Just", "Reverent", "Caring", "Rich", "Valuable", "Practical", "Vigilant", "Compelling", "Vigorous", "Strong", "Superior", "Clever", "Sparing", "Merciful", "Furious", "Fierce", "Solid", "Natural"];
+            var thirdSectionChoices = ["Purpose", "Life", "Self", "Servant", "Lifestyle", "Fulfillment", "Dream", "Hope", "Wish", "Eternity", "Land", "Peace", "Mountain", "Desert", "Valley", "Well", "Oasis", "Force", "Refuge", "Guardian", "Idol", "Pain", "Source of Trust", "Shelter", "Loving Embrace", "King", "Savior", "Prince", "Hero", "Expert", "Truth", "Blessing", "Passion", "Heart", "Soul", "Mind", "Strength"];
 
-          var firstSection = firstSectionChoices[Math.floor(Math.random() * firstSectionChoices.length)];
-          var secondSection = secondSectionChoices[Math.floor(Math.random() * secondSectionChoices.length)];
-          var thirdSection = thirdSectionChoices[Math.floor(Math.random() * thirdSectionChoices.length)];
+            var firstSection = firstSectionChoices[Math.floor(Math.random() * firstSectionChoices.length)];
+            var secondSection = secondSectionChoices[Math.floor(Math.random() * secondSectionChoices.length)];
+            var thirdSection = thirdSectionChoices[Math.floor(Math.random() * thirdSectionChoices.length)];
 
-          if (firstSection == "") {
-            document.getElementById("sermontitle").innerHTML = secondSection + " " + thirdSection;
-            document.title = "\"" + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
-            document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
-          } else {
-            document.getElementById("sermontitle").innerHTML = firstSection + " " + secondSection + " " + thirdSection;
-            document.title = "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
-            document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
+            if (firstSection == "") {
+                document.getElementById("sermontitle").innerHTML = secondSection + " " + thirdSection;
+                document.title = "\"" + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
+                document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
+            } else {
+                document.getElementById("sermontitle").innerHTML = firstSection + " " + secondSection + " " + thirdSection;
+                document.title = "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
+                document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
           }
 
-          var fonts = ["Lobster", "Lobster Two", "Pacifico", "Dancing Script", "Satisfy", "Norican", "Rancho", "Passion One", "Bangers", "Chewy", "Lemon", "Aladin", "Oleo Script", "Merienda", "Montez", "Grand Hotel", "Engagement", "Sniglet", "Sail"];
-          var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+            var fonts = ["Lobster", "Lobster Two", "Pacifico", "Dancing Script", "Satisfy", "Norican", "Rancho", "Passion One", "Bangers", "Chewy", "Lemon", "Aladin", "Oleo Script", "Merienda", "Montez", "Grand Hotel", "Engagement", "Sniglet", "Sail"];
+            var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
 
-          document.getElementById("sermontitle").style.fontFamily = randomFont;
+            document.getElementById("sermontitle").style.fontFamily = randomFont;
 
-          var colors = ["#1F1F1F", "#D85326", "#07A8DE", "#C3CF21"]
-          var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            var colors = ["#1F1F1F", "#D85326", "#07A8DE", "#C3CF21"]
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-          document.getElementById("sermontitle").style.color = randomColor;
+            document.getElementById("sermontitle").style.color = randomColor;
 
         }
     </script>
