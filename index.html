@@ -130,7 +130,7 @@
             var secondSection = secondSectionChoices[Math.floor(Math.random() * secondSectionChoices.length)];
             var thirdSection = thirdSectionChoices[Math.floor(Math.random() * thirdSectionChoices.length)];
 
-            $("sermontitle").fadeOut;
+            $("#sermontitle").fadeOut;
 
             if (firstSection == "") {
                 document.getElementById("sermontitle").innerHTML = secondSection + " " + thirdSection;
@@ -142,7 +142,7 @@
                 document.getElementById("tweetbutton").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
             }
 
-            $("sermontitle").fadeIn;
+            $("#sermontitle").fadeIn;
 
             var fonts = ["Lobster", "Lobster Two", "Pacifico", "Dancing Script", "Satisfy", "Norican", "Rancho", "Passion One", "Bangers", "Chewy", "Lemon", "Aladin", "Oleo Script", "Merienda", "Montez", "Grand Hotel", "Engagement", "Sniglet", "Sail"];
             var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
