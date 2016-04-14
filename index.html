@@ -84,7 +84,7 @@
             <div id="subtitle" class="page-header">
                 <h2>Upcoming Sermon Series</h2>
             </div>
-            <div id="sermon">
+            <div id="sermon" class="well">
                 <h1 id="sermontitle">Loading...</h1>
                 <br />
             </div>
@@ -122,7 +122,7 @@
                 document.getElementById("sermontitle").innerHTML = firstSection + " " + secondSection + " " + thirdSection;
                 document.title = "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
                 document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
-          }
+            }
 
             var fonts = ["Lobster", "Lobster Two", "Pacifico", "Dancing Script", "Satisfy", "Norican", "Rancho", "Passion One", "Bangers", "Chewy", "Lemon", "Aladin", "Oleo Script", "Merienda", "Montez", "Grand Hotel", "Engagement", "Sniglet", "Sail"];
             var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
