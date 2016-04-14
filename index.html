@@ -16,6 +16,7 @@
     <script src="//code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link href='//fonts.googleapis.com/css?family=Lobster|Lobster+Two|Pacifico|Dancing+Script|Satisfy|Norican|Rancho|Passion+One|Bangers|Chewy|Lemon|Aladin|Oleo+Script|Merienda|Montez|Grand+Hotel|Engagement|Sniglet|Sail' rel='stylesheet' type='text/css'>
+    <!--script src="animate.css" integrity="sha384-3870413aaa581cdb08a90cbc84bd54fbc3977fd847e904718b4f843837b3bfcd837e766857baa81c0643c0cc0426f4b0"></script-->
 
     <style>
         body {
@@ -119,6 +120,8 @@
             var secondSection = secondSectionChoices[Math.floor(Math.random() * secondSectionChoices.length)];
             var thirdSection = thirdSectionChoices[Math.floor(Math.random() * thirdSectionChoices.length)];
 
+            $("sermontitle").fadeOut;
+
             if (firstSection == "") {
                 document.getElementById("sermontitle").innerHTML = secondSection + " " + thirdSection;
                 document.title = "\"" + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
@@ -128,6 +131,8 @@
                 document.title = "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
                 document.getElementById("tweetbutton").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! " + window.location.href + " %23EngediSermons";
             }
+
+            $("sermontitle").fadeIn;
 
             var fonts = ["Lobster", "Lobster Two", "Pacifico", "Dancing Script", "Satisfy", "Norican", "Rancho", "Passion One", "Bangers", "Chewy", "Lemon", "Aladin", "Oleo Script", "Merienda", "Montez", "Grand Hotel", "Engagement", "Sniglet", "Sail"];
             var randomFont = fonts[Math.floor(Math.random() * fonts.length)];
