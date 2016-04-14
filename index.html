@@ -89,7 +89,7 @@
                 <br />
             </div>
             <div id="tweetbutton">
-                <a id="tweet" class="btn btn-info btn-xs" target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20new%20sermon%20series,%20coming%20to%20@EngediChurch%20soon!%20http://xd1936.github.io/engedisermons%20%23EngediSermons"><img width="12px" src="twitter.png" /> Share This on Twitter!</a>
+                <a id="tweet" class="btn btn-info btn-xs" target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20new%20sermon%20series,%20coming%20to%20%40EngediChurch%20soon!%20http://xd1936.github.io/engedisermons%20%23EngediSermons"><img width="12px" src="twitter.png" /> Share This on Twitter!</a>
             </div>
             <div id="generateanother">
                 <a class="btn btn-primary btn-lg btn-block" onclick="generateTitle()"><img width="16px" src="reload.png" /> Generate Another Sermon Series</a>
@@ -117,11 +117,11 @@
           if (firstSection == "") {
             document.getElementById("sermontitle").innerHTML = secondSection + " " + thirdSection;
             document.title = "\"" + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
-            document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series! #EngediSermons" + window.location.href;
+            document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! %23EngediSermons" + window.location.href;
           } else {
             document.getElementById("sermontitle").innerHTML = firstSection + " " + secondSection + " " + thirdSection;
             document.title = "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series!";
-            document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next @EngediChurch sermon series! #EngediSermons" + window.location.href;
+            document.getElementById("tweet").href = "https://twitter.com/intent/tweet?text=" + "\"" + firstSection + " " + secondSection + " " + thirdSection + "\" might be the next %40EngediChurch sermon series! %23EngediSermons" + window.location.href;
           }
 
           var fonts = ["Lobster", "Lobster Two", "Pacifico", "Dancing Script", "Satisfy", "Norican", "Rancho", "Passion One", "Bangers", "Chewy", "Lemon", "Aladin", "Oleo Script", "Merienda", "Montez", "Grand Hotel", "Engagement", "Sniglet", "Sail"];
