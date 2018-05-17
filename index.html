@@ -85,7 +85,7 @@
         <div class="container">
             <div id="allcontent" class="card border-secondary mb-3">
                 <div id="titlebar" class="card-header">
-                    <h2 id="subtitle">Upcoming Sermon Series <a id="tweetbutton" class="btn btn-info" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20new%20sermon%20series,%20coming%20to%20%40EngediChurch%20soon!%20http://xd1936.github.io/engedisermons%20%23EngediSermons" target="_blank" onClick="ga('send', 'event', 'TweetButton', 'click');"><img width="12px" src="twitter.png" /> Share This on Twitter!</a></h2>
+                    <h2 id="subtitle">Upcoming Sermon Series <a id="tweetbutton" class="btn btn-info" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20great%20new%20sermon%20series,%20coming%20to%20%40EngediChurch%20soon!%20http://xd1936.github.io/engedisermons%20%23EngediSermons" target="_blank" onClick="gtag('event', 'click', {'event_category': 'TweetButton'});"><img width="12px" src="twitter.png" /> Share This on Twitter!</a></h2>
                 </div>
                 <div id="sermon" class="card-body">
                     <h1 id="sermontitle">Loading...</h1>
@@ -134,7 +134,7 @@
 
             document.getElementById("sermontitle").style.color = randomColor;
 
-            ga('send', 'event', 'SermonTitles', 'generate');
+            gtag('event', 'generate', {'event_category': 'SermonTitles'});
 
         }
     </script>
